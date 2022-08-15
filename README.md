@@ -1,2 +1,2 @@
-# poc
-This repo indicates PoC Projects for troubleshooting or experimental purpose.
+# Welcome to PoC Projects Repository
+This repo includes PoC Projects for troubleshooting or experimental purpose.
