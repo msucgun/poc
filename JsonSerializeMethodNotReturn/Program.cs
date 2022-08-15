@@ -10,13 +10,13 @@ namespace JsonSerializeMethodNotReturn
             var randomListGenerator = new RandomListGenerator();
             var itemCount = 2000000;
             Console.WriteLine($"Generating list for {itemCount:N0} items...");
-            var prices = randomListGenerator.GenerateDtoList(itemCount);
+            var items = randomListGenerator.GenerateDtoList(itemCount);
             Console.WriteLine("Done.");
 
             Console.WriteLine("Performing serialization...");
-            var priceJson = JsonSerializer.Serialize(prices);
-            var priceJsonByteCount = Encoding.UTF8.GetByteCount(priceJson);
-            Console.WriteLine($"Done. Byte count = {priceJsonByteCount:N0}");
+            var itemsJson = JsonSerializer.Serialize(items);
+            var itemsJsonByteCount = Encoding.UTF8.GetByteCount(itemsJson);
+            Console.WriteLine($"Done. Byte count = {itemsJsonByteCount:N0}");
         }
     }
 }
